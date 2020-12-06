@@ -5,9 +5,9 @@
 
 int countChars(char c, const char * pass) {
     int count = 0;
-    for(int x = 0; x < strlen(pass); x++){
+    for(int x = 0; x < strlen(pass); x++) {
         printf("%c", pass[x]);
-        if(pass[x] == c){
+        if(pass[x] == c) {
             count++;
         }
     }
@@ -20,11 +20,6 @@ void tokenize(char line[], int *min, int *max, char *check, char *password[]) {
     *max = atoi(strtok(NULL, " -:"));
     *check = * strtok(NULL, " -:");
     *password = strtok(NULL, " -:");
-
-    // while(ptr != NULL) {
-    //     printf("%s", ptr);
-    //     ptr = strtok(NULL, " -:");
-    // }
 }
 
 int validatePW(char line[]) {
