@@ -9,7 +9,6 @@ void moveHorizontal(int length, int *xPos) {
         }
         printf("%d\n", *xPos);
     }
-
 }
 
 void checkForTree(int *xPos, char * line, int *totalTrees){
